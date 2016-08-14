@@ -7,8 +7,8 @@ function my_structure_format_minutes( $mins = 60 ) {
   $minutes = ($mins % 60);
   $return = '';
 
-  $hours_formatted = sprintf( _n( '%s hr', '%s hrs', $hours, 'phs' ), $hours );
-  $mins_formatted = sprintf( _n( '%s min', '%s mins', $minutes, 'phs' ), $minutes );
+  $hours_formatted = sprintf( _n( '%s hr', '%s hrs', $hours, 'structure' ), $hours );
+  $mins_formatted = sprintf( _n( '%s min', '%s mins', $minutes, 'structure' ), $minutes );
 
   if( 0 < $hours) {
     $return .= $hours_formatted . ' ';
