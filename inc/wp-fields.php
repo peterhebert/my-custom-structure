@@ -143,4 +143,20 @@ function my_save_post_class_meta($post_id, $post)
 
 }
 
-?>
+// Register datepicker ui for properties
+function my_structure_admin_javascript(){
+    global $post;
+    if( $post->post_type == 'film' && is_admin() ) {
+      wp_enqueue_script( 'load-datepicker', MY_PLUGIN_URL.'admin.js', array('jquery', 'jquery-ui-datepicker') );
+    }
+}
+add_action('admin_print_scripts', 'my_structure_admin_javascript');
+
+// Register ui styles for properties
+function my_structure_admin_styles(){
+    global $post;
+    if($post->post_type == 'film' && is_admin()) {
+      wp_enqueue_style('jquery-ui-css', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+    }
+}
+add_action('admin_print_styles', 'my_structure_admin_styles');

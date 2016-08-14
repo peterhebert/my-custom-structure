@@ -37,9 +37,9 @@ include_once('inc/wp-fields.php');
 /* METABOXES USING CMB2
 * note - only use one of ACF or CMB2 - not both
 */
-if (file_exists( dirname(__FILE__).'/lib/cmb2/init.php' )) {
+// if (file_exists( dirname(__FILE__).'/lib/cmb2/init.php' )) {
     // include_once('lib/cmb2/init.php');
-}
+// }
 // include_once('lib/cmb2-field-types/text-number.php');
 
 // CMB2 metaboxes and field definitions
