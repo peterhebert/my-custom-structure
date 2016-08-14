@@ -8,6 +8,8 @@ Author URI: https://rexrana.ca
 Text Domain: structure
 */
 
+define('MY_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+
 // miscellaneous custom functions
 include_once('inc/misc.php');
 
