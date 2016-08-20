@@ -13,9 +13,17 @@ define('MY_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 // miscellaneous custom functions
 include_once('inc/misc.php');
 
-// Custom Post Types
+// Custom Post Type - from GenerateWP
 include_once('inc/post-types.php');
+
+// Custom Post Type - from WP-CLI
+// include_once('post-types/film.php');
+
+// Custom Taxonomy - from GenerateWP
 include_once('inc/taxonomy.php');
+
+// Custom Taxonomy - from WP-CLI
+//include_once('taxonomies/genre.php');
 
 // field setup using WordPress core
 include_once('inc/wp-fields.php');
