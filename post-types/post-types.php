@@ -1,4 +1,7 @@
 <?php
+/* This file was generated using the wizard at 
+ * https://generatewp.com/post-type/
+ */
 
 // 'Film' Post Type
 function my_structure_film_post_type() {
@@ -47,7 +50,7 @@ function my_structure_film_post_type() {
 		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
-    'rewrite' => array('slug' => 'film', 'with_front' => FALSE),
+		'rewrite' => array('slug' => 'film', 'with_front' => FALSE),
 		'capability_type'       => 'page',
 	);
 	register_post_type( 'film', $args );
