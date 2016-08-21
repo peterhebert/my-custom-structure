@@ -25,7 +25,7 @@ function film_init() {
 		'has_archive'       => true,
 		'rewrite'           => true,
 		'query_var'         => true,
-		'menu_icon'         => 'dashicons-dashicons-editor-video',
+		'menu_icon'         => 'dashicons-editor-video',
 		'show_in_rest'      => true,
 		'rest_base'         => 'film',
 		'rest_controller_class' => 'WP_REST_Posts_Controller',
