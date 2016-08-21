@@ -5,4 +5,4 @@ Requires at least: 3.5
 Tested up to: 4.5.3
 License: GPL-3.0
 
-A sample WordPress plugin for creating a custom site structure using either ACF or CMB2
+A sample WordPress plugin for creating a custom site structure

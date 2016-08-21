@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: My Custom Structure
-Version: 0.0.1
+Version: 0.1.0
 Description: Provides the content architecture for my site
 Author: Peter Hebert
 Author URI: https://rexrana.ca
