@@ -1,5 +1,5 @@
 <?php
-/* This file was generated using the wizard at 
+/* This file was generated using the wizard at
  * https://generatewp.com/post-type/
  */
 
@@ -56,3 +56,11 @@ function my_structure_film_post_type() {
 	register_post_type( 'film', $args );
 }
 add_action( 'init', 'my_structure_film_post_type', 0 );
+
+// add 'film' post type to home query
+function add_film_post_type_to_query( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'post_type', array('post', 'film') );
+    }
+}
+add_action( 'pre_get_posts', 'add_film_post_type_to_query' );
